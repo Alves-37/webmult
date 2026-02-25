@@ -1,4 +1,4 @@
-import { Building2, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   const scrollToAbout = () => {
@@ -11,8 +11,12 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center mb-6 sm:mb-8">
-          <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-white/20">
-            <Building2 className="w-16 h-16 sm:w-20 sm:h-20 text-blue-400" />
+          <div className="bg-white/10 backdrop-blur-sm p-1.5 sm:p-2 rounded-2xl border border-white/20">
+            <img
+              src="/nelson.jpg"
+              alt="Nelson Mult-Service"
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-white/70 shadow-lg"
+            />
           </div>
         </div>
 
