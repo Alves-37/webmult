@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
-          <div>
+          <div className="text-center sm:text-left">
             <div className="flex items-center mb-3 sm:mb-4">
               <Building2 className="w-7 h-7 sm:w-8 sm:h-8 text-blue-400 mr-2" />
               <span className="text-lg sm:text-xl font-bold">Nelson Mult-Service</span>
@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Serviços</h3>
             <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
               <li>
@@ -60,7 +60,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Localizações</h3>
             <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
               <li>
@@ -91,7 +91,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Contato</h3>
             <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
               <li className="flex items-center">

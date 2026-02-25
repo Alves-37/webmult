@@ -8,12 +8,12 @@ export default function Locations() {
         {
           name: 'Nelson Mult-Service - Reprografia',
           services: ['Reprografia', 'Papelaria'],
-          address: 'Centro de Gurué',
+          address: 'Bairro Barragem, a 50 metros do IMIG',
         },
         {
           name: 'Nelson Mult-Service - Gráfica',
           services: ['Gráfica', 'Papelaria'],
-          address: 'Avenida Principal, Gurué',
+          address: 'Bairro Barragem, a 50 metros do IMIG',
         },
       ],
     },
@@ -23,17 +23,17 @@ export default function Locations() {
         {
           name: 'Nelson Mult-Service - Papelaria',
           services: ['Papelaria', 'Material Escolar'],
-          address: 'Centro de Molumbo',
+          address: 'Bairro 7 de Abril, perto da Escola Primária',
         },
         {
           name: 'Nelson Mult-Service - Eletrônica',
           services: ['Eletrônica', 'Informática'],
-          address: 'Rua Comercial, Molumbo',
+          address: 'Bairro 7 de Abril, perto da Escola Primária',
         },
         {
           name: 'Nelson Mult-Service - Ferragem',
           services: ['Ferragem', 'Construção'],
-          address: 'Zona Industrial, Molumbo',
+          address: 'Bairro 7 de Abril, perto da Escola Primária',
         },
       ],
     },
