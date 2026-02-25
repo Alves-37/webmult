@@ -6,31 +6,31 @@ export default function Services() {
       icon: FileText,
       title: 'Reprografia',
       description: 'Cópias, impressões e encadernações com qualidade profissional',
-      features: ['Cópias em preto e branco', 'Impressões coloridas', 'Encadernações', 'Plastificações'],
+      features: ['Cópias em preto e branco', 'Impressões coloridas', 'Encadernações'],
     },
     {
       icon: BookOpen,
       title: 'Papelaria',
       description: 'Material escolar e de escritório completo',
-      features: ['Material escolar', 'Artigos de escritório', 'Livros e cadernos', 'Acessórios diversos'],
+      features: ['Material escolar', 'Artigos de escritório', 'Livros e cadernos'],
     },
     {
       icon: Printer,
       title: 'Gráfica',
       description: 'Soluções gráficas personalizadas para seu negócio',
-      features: ['Cartões de visita', 'Panfletos e folders', 'Banners e placas', 'Materiais promocionais'],
+      features: ['Cartões de visita', 'Panfletos e folders', 'Banners e placas'],
     },
     {
       icon: Cpu,
       title: 'Eletrônica',
       description: 'Produtos eletrônicos e acessórios tecnológicos',
-      features: ['Componentes eletrônicos', 'Acessórios de informática', 'Equipamentos diversos', 'Suporte técnico'],
+      features: ['Componentes eletrônicos', 'Acessórios de informática', 'Suporte técnico'],
     },
     {
       icon: Wrench,
       title: 'Ferragem',
       description: 'Ferramentas e materiais para construção',
-      features: ['Ferramentas manuais', 'Ferramentas elétricas', 'Material de construção', 'Acessórios diversos'],
+      features: ['Ferramentas manuais', 'Ferramentas elétricas', 'Material de construção'],
     },
   ];
 
@@ -51,7 +51,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-blue-50/40 border border-gray-100/80"
             >
               <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl mb-4 sm:mb-6 shadow-lg">
                 <service.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
@@ -65,14 +65,16 @@ export default function Services() {
                 {service.description}
               </p>
 
-              <ul className="space-y-2">
+              <div className="flex flex-wrap gap-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center text-sm sm:text-base text-gray-700">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3 flex-shrink-0"></span>
+                  <span
+                    key={idx}
+                    className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium border border-blue-100"
+                  >
                     {feature}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>

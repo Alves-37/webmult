@@ -29,7 +29,17 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="text-center sm:text-left">
+          {/* Versão compacta de serviços/localizações apenas no mobile */}
+          <div className="text-center sm:hidden">
+            <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Serviços &amp; Localizações</h3>
+            <ul className="space-y-1 text-gray-300 text-sm">
+              <li>Reprografia e Gráfica em Gurué</li>
+              <li>Papelaria em Gurué e Molumbo</li>
+              <li>Eletrônica e Ferragem em Molumbo</li>
+            </ul>
+          </div>
+
+          <div className="text-center sm:text-left hidden sm:block">
             <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Serviços</h3>
             <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
               <li>
@@ -60,7 +70,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="text-center sm:text-left">
+          <div className="text-center sm:text-left hidden sm:block">
             <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Localizações</h3>
             <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
               <li>

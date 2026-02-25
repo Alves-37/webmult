@@ -64,7 +64,7 @@ export default function Locations() {
                 {location.stores.map((store, storeIndex) => (
                   <div
                     key={storeIndex}
-                    className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-4 sm:p-6 border border-gray-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                    className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-4 sm:p-6 border border-gray-200 hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
                   >
                     <div className="flex items-start mb-3 sm:mb-4">
                       <div className="bg-blue-600 p-2 sm:p-3 rounded-lg mr-3 sm:mr-4 flex-shrink-0">

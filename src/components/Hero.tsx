@@ -11,11 +11,11 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center mb-6 sm:mb-8">
-          <div className="bg-white/10 backdrop-blur-sm p-1.5 sm:p-2 rounded-2xl border border-white/20">
+          <div className="group bg-white/10 backdrop-blur-sm p-1.5 sm:p-2 rounded-2xl border border-white/20 shadow-xl shadow-black/20">
             <img
               src="/nelson.jpg"
               alt="Nelson Mult-Service"
-              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-white/70 shadow-lg"
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-white/70 shadow-lg animate-pulse transition-transform duration-500 group-hover:scale-105"
             />
           </div>
         </div>
@@ -29,8 +29,8 @@ export default function Hero() {
         </p>
 
         <p className="text-base sm:text-lg text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto px-4 leading-relaxed">
-          5 estabelecimentos estrategicamente localizados em Gurué e Molumbo,
-          oferecendo serviços de Reprografia, Papelaria, Gráfica, Eletrônica e Ferragem
+          5 estabelecimentos em Gurué e Molumbo,
+          oferecendo Reprografia, Papelaria, Gráfica, Eletrônica e Ferragem
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
@@ -41,10 +41,10 @@ export default function Hero() {
             Conheça Nossos Serviços
           </button>
           <a
-            href="#contact"
-            className="w-full sm:w-auto bg-white/10 backdrop-blur-sm hover:bg-white/20 active:bg-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 border border-white/30 text-center"
+            href="#locations"
+            className="w-full sm:w-auto bg-white/10 backdrop-blur-sm hover:bg-white/20 active:bg-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 border border-white/30 text-center hover:shadow-xl hover:-translate-y-0.5"
           >
-            Entre em Contato
+            Ver Nossas Lojas
           </a>
         </div>
       </div>
